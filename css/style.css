@@ -19,15 +19,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0 0 0;
+  padding: 2rem 0 0 0;
 
 }
 
-.buttons {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  max-width: 800px;
+section {
+  width: 515px;
 }
 
 #clear-button {
@@ -47,10 +44,29 @@ main {
   opacity: 0.9;
 }
 
+#grid-number-button {
+  margin: 0 0 2rem 0;
+  background-color: var(--green1);
+  color: var(--green5);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+}
+
+#grid-number-button:hover {
+  opacity: 0.9;
+}
+
 .grid-container {
   display: grid;
-  max-width: 800px;
-  grid-template-columns: repeat(16, 1fr);
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(16, auto);
+  overflow: hidden;
   border: 10px solid var(--green1);
   box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
@@ -60,8 +76,8 @@ main {
 
 .square {
   background-color: var(--green3);
-  height: 25px;
-  width: 25px;
+  min-height: 1px;
+  min-width: 1px;
   border: 1px solid var(--green1);
 }
 
