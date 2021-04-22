@@ -55,20 +55,7 @@ section {
 }
 
 #default-button {
-  margin: 0 0 1rem 0;
-  background-color: var(--green1);
-  color: var(--green5);
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
-}
-
-#thicken-button {
-  margin: 0 0 1rem 0;
+  margin: 0;
   background-color: var(--green1);
   color: var(--green5);
   border: none;
@@ -81,7 +68,7 @@ section {
 }
 
 #colored-button {
-  margin: 0 0 1rem 0;
+  margin: 0;
   background-color: var(--green1);
   color: var(--green5);
   border: none;
@@ -96,8 +83,8 @@ section {
 #clear-button:hover,
 #grid-number-button:hover,
 #default-button:hover,
-#thicken-button:hover,
-#colored-button:hover{
+#colored-button:hover,
+.git-svg:hover{
   opacity: 0.9;
 }
 
@@ -122,4 +109,22 @@ section {
 
 .square-active {
   background-color: var(--green2) !important;
+}
+
+.types {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 0 1rem 0;
+}
+
+.git-svg {
+  align-self: center;
+  height: 32px;
+  width: 32px;
+  color: var(--green1);
+  cursor: pointer;
 }

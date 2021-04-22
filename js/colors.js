@@ -12,31 +12,6 @@ function defaultDiv() {
 
 defaultDiv();
 
-/* function thickness() {
-  for (let i = 0; i < 10; i++) {
-    return thicknessColor;
-  }
-}
-
-function thickenDiv() {
-  thickenButton.addEventListener('click', () => {
-    let r = 56;
-    let g = 163;
-    let b = 165;
-    square.addEventListener('mouseenter', (e) => {
-      let thicknessColor = `rgb(${r}, ${g}, ${b})`;
-      e.target.style.backgroundColor = `${thicknessColor}`;
-    });
-    square.addEventListener('mouseleave', () => {
-      r = r - 10;
-      g = g - 10;
-      b = b - 10;
-    });
-  });
-}
-
-thickenDiv(); */
-
 function randomColor() {
   let letters = '0123456789ABCDEF';
   let color = '#';
