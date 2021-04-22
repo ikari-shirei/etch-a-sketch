@@ -4,6 +4,7 @@
   --green3: #57CC99;
   --green4: #80ED99;
   --green5: #C7F9CC;
+  /*--green3rgb: rgb(56, 163, 165); */
 }
 
 body {
@@ -28,7 +29,7 @@ section {
 }
 
 #clear-button {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   background-color: var(--green1);
   color: var(--green5);
   border: none;
@@ -38,14 +39,10 @@ section {
   box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
-}
-
-#clear-button:hover {
-  opacity: 0.9;
 }
 
 #grid-number-button {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   background-color: var(--green1);
   color: var(--green5);
   border: none;
@@ -57,7 +54,37 @@ section {
   -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
 }
 
-#grid-number-button:hover {
+#default-button {
+  margin: 0;
+  background-color: var(--green1);
+  color: var(--green5);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+}
+
+#colored-button {
+  margin: 0;
+  background-color: var(--green1);
+  color: var(--green5);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
+}
+
+#clear-button:hover,
+#grid-number-button:hover,
+#default-button:hover,
+#colored-button:hover,
+.git-svg:hover{
   opacity: 0.9;
 }
 
@@ -71,7 +98,6 @@ section {
   box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(34, 87, 122,0.75);
-
 }
 
 .square {
@@ -83,4 +109,22 @@ section {
 
 .square-active {
   background-color: var(--green2) !important;
+}
+
+.types {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 0 1rem 0;
+}
+
+.git-svg {
+  align-self: center;
+  height: 32px;
+  width: 32px;
+  color: var(--green1);
+  cursor: pointer;
 }
