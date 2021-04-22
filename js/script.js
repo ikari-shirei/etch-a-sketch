@@ -30,7 +30,8 @@ function removeDiv(num) {
 function hoverDiv() {
   let square = document.querySelector('div');
   square.addEventListener('mouseover', (e) => {
-    e.target.classList.add('square-active');
+    //e.target.classList.add('square-active');
+    e.target.style.backgroundColor = 'var(--green2)';
   });
 }
 
@@ -44,7 +45,8 @@ function clear() {
   //iterate through divs and remove active class
   clear.addEventListener('click', () => {
     for (let i = 0; i < gridContainerItems.length; i++) {
-      gridContainerItems[i].classList.remove('square-active');
+      //gridContainerItems[i].classList.remove('square-active');
+      gridContainerItems[i].style.backgroundColor = 'var(--green3)';
     }
   });
 }
