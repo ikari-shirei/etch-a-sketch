@@ -63,16 +63,16 @@ function ask() {
       gridContainerItems[i].classList.remove('square-active');
     }
     //ask for column size
-    numberOfGrid = prompt('How many shall thee? 1-100');
+    numberOfGrid = prompt('How many columns? 1-50');
     //remove all divs and replace them with using new inputs
-    if (numberOfGrid <= 100 && numberOfGrid >= 1 && Number(numberOfGrid)) {
+    if (numberOfGrid <= 50 && numberOfGrid >= 1 && Number(numberOfGrid)) {
       removeDiv(lengthOfGrid);
       numberOfGrid = numberOfGrid;
       lengthOfGrid = numberOfGrid * numberOfGrid;
       gridContainer.style.gridTemplateColumns = `repeat(${numberOfGrid}, 1fr)`;
       createDiv(lengthOfGrid);
     } else {
-      window.alert('Number should be between 100 and 1');
+      window.alert('Number should be between 1 and 50');
     }
   });
 }
